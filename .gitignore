@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Singularity
+*.sif
+
+# DataJoint
+dj_local_conf.json
+
