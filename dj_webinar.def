@@ -11,11 +11,10 @@ From: ubuntu:20.04
 
     add-apt-repository universe
     apt update
-    apt -y install \
-        nodejs \
-        npm \
-        graphviz
+    apt -y install graphviz
 
+    curl -sL https://deb.nodesource.com/setup_15.x | bash -
+    apt -y install nodejs
 
     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
     python3.8 get-pip.py
