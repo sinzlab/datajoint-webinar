@@ -23,8 +23,11 @@ From: ubuntu:20.04
 
     python3.8 -m pip --no-cache-dir install \
         datajoint==0.12.6 \
-        jupyterlab
+        jupyterlab \
+        jupyterlab_code_formatter \
+        black
 
+    jupyter server extension enable jupyterlab_code_formatter
     jupyter labextension install @axlair/jupyterlab_vim
 
 %runscript
